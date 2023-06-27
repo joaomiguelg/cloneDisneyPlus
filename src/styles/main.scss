@@ -41,14 +41,32 @@ body {
 
 .text--lg {
     @include text(18px);
+
+    @media (max-width: 768px) {
+
+        @include text(15px);
+
+    }
 }
 
 .text {
     @include text;
+
+    @media (max-width: 768px) {
+
+        @include text(14px);
+
+    }
 }
 
 .text--sm {
     @include text(12px);
+
+    @media (max-width: 768px) {
+
+        @include text(11px);
+
+    }
 }
 
 .link-text {
@@ -59,14 +77,32 @@ body {
 
 .tittle--lg {
     @include title (44px);
+
+    @media (max-width: 768px) {
+
+        @include title(26px);
+
+    }
 }
 
 .tittle {
     @include title;
+
+    @media (max-width: 768px) {
+
+        @include title(24px);
+
+    }
 }
 
 .tittle--sm {
     @include title(28px);
+
+    @media (max-width: 768px) {
+
+        @include title(22px);
+
+    }
 }
 
 .button {
@@ -118,6 +154,10 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
     
 
     img{
@@ -149,6 +189,12 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @media (max-width: 768px) {
+                position: relative;
+                left: 0;
+                width: 100%;
+            }
             
         }
 
