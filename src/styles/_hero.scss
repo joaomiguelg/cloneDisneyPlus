@@ -16,7 +16,11 @@
 
     .button {
         margin-top: 2vw;
-        margin-bottom: 8px;
+        margin-bottom: 16px;
+
+        @media (max-width: 768px) {
+            margin-top: 24px;
+        }
 
     }
 
