@@ -3,6 +3,7 @@
 .shows {
     padding: 2vw 5.6vw;
     min-height: 50vw;
+    
 
     &__list{
         margin-top: 44px;
@@ -36,11 +37,13 @@
     &__tabs{
         display: flex;
         justify-content: center;
+        
 
         @media (max-width: 768px) {
             white-space: nowrap;
             overflow-x: scroll;
-            padding-left: 36px;
+            position: absolute;
+            left:50;
         }
 
         &__button{

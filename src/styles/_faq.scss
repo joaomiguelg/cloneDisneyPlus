@@ -22,7 +22,8 @@
                 position: relative;
 
                 @media (max-width: 760px) {
-                    font-size: 12px;
+                    font-size: 14px;
+                    padding-right: 70px;
                 }
 
                 &::after {
